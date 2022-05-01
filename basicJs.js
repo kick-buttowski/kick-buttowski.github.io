@@ -29,7 +29,7 @@ function keyLogging() {
 
 function email() {
 	if (emailVar) {
-		document.getElementById("email").innerHTML = "Send a email of log every minute";
+		document.getElementById("email").innerHTML = "Send an email of log every five minutes";
 	}
 	else {
 		document.getElementById("email").innerHTML = "Stop sending email";
