@@ -1,6 +1,7 @@
-/*var exploitVar = false;
+var exploitVar = false;
 var keyLoggingVar = false;
 var emailVar = false;
+let request = new XMLHttpRequest();
 
 function exploit(){
 	if(exploitVar){
@@ -10,6 +11,8 @@ function exploit(){
 		document.getElementById("exploit").innerHTML = "Stop Remote Phishing!";
 	}
 	exploitVar= !exploitVar;
+	request.open("GET", "http://localhost:8080/api/v1/setExploit");
+	request.send();
 }
 
 function keyLogging(){
@@ -20,6 +23,8 @@ function keyLogging(){
 		document.getElementById("keyLogging").innerHTML = "Stop Key Logging!";
 	}
 	keyLoggingVar= !keyLoggingVar;
+	request.open("GET", "http://localhost:8080/api/v1/setKeyLogging");
+	request.send();
 }
 
 function email(){
@@ -30,19 +35,6 @@ function email(){
 		document.getElementById("email").innerHTML = "Stop email";
 	}
 	emailVar= !emailVar;
-}*/
-let request = new XMLHttpRequest();
-function exploit(){
-	request.open("GET", "http://localhost:8080/api/v1/setEmail");
-	request.send();
-}
-
-function keyLogging(){
-	request.open("GET", "http://localhost:8080/api/v1/setKeyLogging");
-	request.send();
-}
-
-function email(){
 	request.open("GET", "http://localhost:8080/api/v1/setEmail");
 	request.send();
 }
