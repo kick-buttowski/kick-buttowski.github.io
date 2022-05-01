@@ -1,6 +1,7 @@
-var exploitVar = false;
+/*var exploitVar = false;
 var keyLoggingVar = false;
 var emailVar = false;
+
 function exploit(){
 	if(exploitVar){
 		document.getElementById("exploit").innerHTML = "Start Remote Phishing!";
@@ -29,4 +30,19 @@ function email(){
 		document.getElementById("email").innerHTML = "Stop email";
 	}
 	emailVar= !emailVar;
+}*/
+let request = new XMLHttpRequest();
+function exploit(){
+	request.open("GET", "http://localhost:8080/api/v1/setEmail");
+	request.send();
+}
+
+function keyLogging(){
+	request.open("GET", "http://localhost:8080/api/v1/setKeyLogging");
+	request.send();
+}
+
+function email(){
+	request.open("GET", "http://localhost:8080/api/v1/setEmail");
+	request.send();
 }
