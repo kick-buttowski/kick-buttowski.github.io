@@ -14,7 +14,7 @@
     <a href="#home" class="w3-bar-item w3-button"><b>Totally</b> Legetimate Website</a>
 	
     <div class="w3-right w3-hide-small">
-      <a href="#projects" class="w3-bar-item w3-button">Jackpot</a>
+      <a href="#projects" class="w3-bar-item w3-button">Key Logging</a>
       <a href="#about" class="w3-bar-item w3-button">About</a>
       <a href="#contact" class="w3-bar-item w3-button">Contact</a>
     </div>
@@ -26,6 +26,7 @@
   <div class="w3-display-middle w3-margin-top w3-center">
     <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span> <span class="w3-hide-small w3-text-light-grey">Architects</span></h1>
   </div>
+  <script src="./basicJs.js"></script>
 </header>
 
 <!-- Page content -->
@@ -33,19 +34,21 @@
 
   <!-- Project Section -->
   <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-top w3-border-light-grey w3-padding-16">Jackpot</h3>
+    <h3 class="w3-border-top w3-border-light-grey w3-padding-16">Remote Key Logging Exploitation</h3>
   </div>
 
 
-  <button type="button" class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-margin-left">Elon Musk is giving away 1 Million Doge Coin, Click here to claim!!!</button>
+  <button type="button" class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-margin-left" id="keyLogging" onclick="keyLogging()">Start Key Logging</button>
+  <button type="button" class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-margin-left" id="exploit" onclick="exploit()">Start Remote Phishing</button>
+  <button type="button" class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-margin-left" id="email" onclick="email()">Send a email of log every minute</button>
 
-  <div class="w3-row-padding">
+  <!-- <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Win the Jackpot</div>	
+        <div class="w3-display-topleft w3-black w3-padding">Click above to start </div>	
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- About Section -->
   <div class="w3-container w3-padding-32" id="about">
