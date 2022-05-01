@@ -32,7 +32,7 @@ function email() {
 		document.getElementById("email").innerHTML = "Send a email of log every minute";
 	}
 	else {
-		document.getElementById("email").innerHTML = "Stop email";
+		document.getElementById("email").innerHTML = "Stop sending email";
 	}
 	emailVar = !emailVar;
 	request.open("GET", "http://localhost:8080/api/v1/setEmail");
