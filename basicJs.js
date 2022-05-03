@@ -38,3 +38,9 @@ function email() {
 	request.open("GET", "http://localhost:8080/api/v1/setEmail");
 	request.send();
 }
+
+
+function setDefault() {
+	request.open("GET", "http://localhost:8080/api/v1/setDefault");
+	request.send();
+}
