@@ -5,7 +5,8 @@ let request = new XMLHttpRequest();
 
 function exploit() {
 
-	exploitVar = !exploitVar;
+	request.open("GET", "http://localhost:8080/api/v1/setExploit");
+	request.send();
 }
 
 function keyLogging() {
